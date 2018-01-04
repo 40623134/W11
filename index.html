@@ -1,1 +1,326 @@
-index
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>
+2017 Spring 機械設計工程系網際內容管理
+</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="data/reveal/reveal.css">
+    <link rel="stylesheet" href="data/reveal/black.css" id="theme">
+    
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="data/reveal/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'data/reveal/pdf.css' : 'data/reveal/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="data/reveal/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section data-markdown>
+    <script type="text/template">
+## 2017Fall CADP 與 CP
+
+### 虎科大機械設計工程系
+
+<small>
+Created by [40623134 紀冠瑋](http://kmolab.github.io/blog/)
+</small>
+
+[CADP 與 CP 課程網誌](blog/index.html)
+
+<img class="rg_ic rg_i" data-sz="f" name="ScNrSZd-kwEn9M:" jsaction="load:str.tbn" alt="「駭客」的圖片搜尋結果" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" style="width: 300px; height: 168px; margin-left: -13px; margin-right: -8px; margin-top: 0px;" src="data:image/jpeg;base64,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">
+    </script>
+</section>
+
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # W1-W9
+    * 我在W1-W3的課程先學到了基本的指令與機械和設計的定義。
+    * W4-W6了解了基本的計算機設計與程式語言的概念。
+    * W7學習函數語語法的結合使用。
+    * W8學習利用eric6使用簡單的圖像拉出複雜的程式。
+    <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t34.0-0/p480x480/23602186_1777132508983630_1787153777_n.jpg?oh=cebf29402e6eea2f89cb3d36eb99e086&oe=5A0DF36F"height="250" width="150">
+    <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t34.0-0/p480x480/23574148_1777132498983631_1486593849_n.jpg?oh=92b095274ca966f19eab1a5404ced7fe&oe=5A0D2F1C"height="250" width="150">
+    <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t34.0-0/p480x480/23601962_1777132475650300_1392095524_n.jpg?oh=cf3da3e84128a39cd77eb7f5322749a1&oe=5A0E1D74"height="250" width="150">
+    <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t34.0-0/p480x480/23634914_1777132415650306_661628493_n.jpg?oh=a4335da7cab3ae7733090cfccf2579e7&oe=5A0E02E3"height="250" width="150">
+    <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t34.0-0/p480x480/23619252_1777132395650308_559291139_n.jpg?oh=bcc29e521382824f03b51e40afecdced&oe=5A0CFF09"height="250" width="150">
+    <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t34.0-0/p480x480/23602306_1777132315650316_1873373955_n.jpg?oh=a1a6c90be9ea32f81d3c32a1eed3b52d&oe=5A0D39E2"height="250" width="150">
+    <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t34.0-0/p480x480/23574299_1777132305650317_1911227387_n.jpg?oh=818f124b50064401164c7f237fccb2d3&oe=5A0CF7EB"height="250" width="150">
+    <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t34.0-0/p480x480/23634670_1777132285650319_11156247_n.jpg?oh=a6eaf1a741b6005b0b88f3afe69cd241&oe=5A0E0233"height="250" width="150">
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+    # 推送更新網誌
+
+    <iframe src="https://player.vimeo.com/video/241859320" width="640" height="257" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/241859320">40623134-w7-exam-1.mp4</a> from <a href="https://vimeo.com/user73932380">紀冠瑋</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+    #eric6 拉圖形與設定大小
+
+    <iframe src="https://player.vimeo.com/video/242767461" width="640" height="347" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/242767461">2017-11-14_23-49-41</a> from <a href="https://vimeo.com/user73932380">紀冠瑋</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </script>
+    </section>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 常用指令
+
+* fossil = 系統的組成與狀態
+
+* cd 更換目錄
+* mkdir (md) 創建資料夾
+* fossil clone 克隆網址
+* fossil open 打開fossil檔
+* fossil add . 添加
+* fossil status 檢知檔案狀況
+* fossil commit 提交檔案  -m 'xxx' 提交的訊息
+   
+   
+    </script>
+</section>
+
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # 語法與字節
+
+    *  (#) 註解
+    * import 導入
+    * class 物件
+    * def 函式
+    * (QToolButton): 
+           def 內容
+    * ''' 多行註解    
+    * for 迴圈
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    # SCM 目標 (1/2)
+
+    * 辨識 (identification) - 需求、流程與環境的辨識
+    * 控制 (control) - 批准或拒絕內容的變更
+    * 會計 (accounting) -  完整保存每個階段所進行的變更
+    * 審核 (auditing) - 確認建立完整的文件, 需求, 架構, 規範與使用者手冊
+    * 構建管理 (build) - 管理過程中所需的各類工具
+
+
+
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    # SCM 目標 (2/2)
+
+    * 流程管理 (process) - 確認過程融入組織的發展要求
+    * 環境管理 (environment) - 提供託管內容所需的軟體與硬體
+    * 團隊合作 (teamwork) - 促進團隊互動協同
+    * 缺陷追踪 (defect tracking) - 可追溯每個缺陷的源頭
+
+
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    # SCM 的目標
+
+    * 以團隊協同合作模式
+    * 透過詳細的履歷 (清楚註記時間、變更與建立者)
+    * 完整呈現並管理各階段內容的組成元件與狀態
+    * 達到資源高效運用, 最佳化軟體<strike>機械設計</strike>開發過程
+
+        </script>
+    </section>
+
+
+    						
+</section>
+
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # 課程如何評分
+
+    * 出席: 20% (if 全勤: 提問與答題內容*平時表現)
+    * 平時表現: 30% (隨身碟與倉儲內容 + 每堂筆記內容)
+    * 驗收考試: 30% (三階段現場錄製操作與心得影片-註記時間與錄製人員學號)
+    * 驗收簡報: 20% (驗收週各組簡報, 各學員簡報, 根據驗收考試與簡報內容自評與互評)
+
+        </script>
+    </section>
+
+
+    						
+    <section data-markdown>
+        <script type="text/template">
+    # 心得
+
+    * 剛開始對於不熟悉的程式，一直都在碰壁，一直在嘗試解決的方式，途中低落幾次、懊惱了幾次，當問題解決後一切都豁達開朗，也將目前程式的課程理解的差不多有個眉目，也有感覺還能繼續下去的心情。
+
+    * 自評分數:75分
+
+        </script>
+    </section>
+
+
+    						
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 投影片快捷鍵
+
+* 利用箭頭上下前後換頁
+* 按 f 鍵進入全螢幕模式 (full screen)
+* 按 s 鍵可以顯示投影片筆記 (show)
+* 按 o 鍵可以切換單張或全域檢視 (overview)
+* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
+* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
+    </script>
+</section>
+
+
+						
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+# 數學符號與方程式
+
+Inline math equations go in like so: $\omega = d\phi / dt$. Display
+math should get its own line and be put in in double-dollarsigns:
+
+$$I = \int \rho R^{2} dV$$
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 利用 Markdown 寫投影片
+以下利用 Markdown 格式展示 Python 程式碼:
+```
+# use threading and subprocess to threading the make process
+import os
+import subprocess
+import threading
+
+def domake():
+    
+    path = "../exposed/api/exposed"
+    ubuntu = "../Ubuntu"
+    
+    # create obj path
+    
+    if not os.path.exists(path+"/../obj"):
+        os.makedirs(path+"/../obj")
+    
+    subprocess.call(["make", "clean"], cwd=path)
+    subprocess.call("make", cwd=path)
+    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
+    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
+    
+make = threading.Thread(target=domake)
+make.start()
+```
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+## 使用 iframe 導入影片
+
+### 導入影片 template
+
+<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
+
+						
+</section>
+</div>
+
+</div>
+
+<script src="data/reveal/head.min.js"></script>
+<script src="data/reveal/reveal.js"></script>
+<script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'data/reveal/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'data/reveal/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'data/reveal/zoom.js', async: true },
+                { src: 'data/reveal/notes.js', async: true },
+                { src: 'data/reveal/math.js', async: true }
+            ]
+        });
+</script>
+</body>
+</html>
+
